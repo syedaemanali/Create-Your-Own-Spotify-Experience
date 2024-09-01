@@ -26,7 +26,6 @@ How it all works together:
 K-Means clustering is performed on all the songs and all song track ids are stored in mongo db with their cluster numbers. Once the user shows interest in a song, all other songs from that share the same cluster are pulled out and lsh is performed. We calculate Jaccard similarity between all these songs and the song the user streamed, then select the top 5 with the highest similarity, to be displayed on the web page as recommendations
 
 Phase III:
-Sure, here's a simple breakdown of how your Flask application with Kafka Consumer works:
 
 - Flask Application:
   - Renders HTML templates using `render_template` or returns JSON responses using `jsonify`.
